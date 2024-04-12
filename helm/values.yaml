@@ -1,12 +1,12 @@
 deployment:
-  name: useraccount
+  name: webapp
   replicaCount: 1
 
 image:
-  repository: artisantek/useraccount
-  tag: version1
+  repository: public.ecr.aws/e4x7i6u2/devops/fleetapp
+  tag: latest
   
 service:
-  containerPort: 3080
-  nodePort: 31500
+  containerPort: 80
+  nodePort: 30080
 
