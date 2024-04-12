@@ -5,7 +5,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - port: {{ .Values.service.containerPort }}
+  - name: http
+    port: {{ .Values.service.containerPort }}
     targetPort: {{ .Values.service.containerPort }}
     nodePort: {{ .Values.service.nodePort }}
   selector:
